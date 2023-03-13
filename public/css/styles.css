@@ -115,7 +115,7 @@ p {
   border: 1px solid black;
 }
 .placeholder-mod {
-  border: 1px solid gray;
+  border: 1px solid orange;
 }
 .placeholder-mod .copy {
   padding: 10px 20px;
@@ -150,7 +150,7 @@ p {
     display: table-cell !important;
   }
   .email-wrapper {
-    border: 1px solid goldenrod !important;
+    border: 1px solid red !important;
   }
   .placeholder-mod .copy {
     padding: 10px !important;

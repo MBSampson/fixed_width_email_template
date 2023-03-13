@@ -1,0 +1,37 @@
+@media only screen and (max-width: 621px), only screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 360px !important;
+    max-width: 360px !important;
+  }
+  .desktop {
+    display: none !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+  img.mobile {
+    display: block !important;
+    height: auto !important;
+  }
+  span.mobile {
+    display: inline !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+  table.mobile {
+    display: table !important;
+  }
+  tr.mobile {
+    display: table-row !important;
+  }
+  td.mobile {
+    display: table-cell !important;
+  }
+  .email-wrapper {
+    border: 1px solid red !important;
+  }
+  .placeholder-mod .copy {
+    padding: 10px !important;
+    text-align: center !important;
+  }
+}

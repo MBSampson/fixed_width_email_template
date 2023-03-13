@@ -1,0 +1,159 @@
+.email-wrapper {
+  width: 720px;
+  margin: 25px auto;
+}
+.desktop-width {
+  padding: 0px;
+  margin: 0 auto;
+  width: 720px;
+}
+.mobile-width {
+  width: 360px;
+  max-width: 360px;
+  padding: 0px;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0;
+  color: #999;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 auto;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+a {
+  color: #1967D2;
+  text-decoration: none;
+}
+img {
+  display: block;
+  border: none;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+strong p,
+.bold p,
+strong h1,
+.bold h1,
+strong h2,
+.bold h2,
+strong h3,
+.bold h3,
+strong h4,
+.bold h4,
+strong h5,
+.bold h5,
+strong h6,
+.bold h6 {
+  font-weight: 700;
+}
+.medium p,
+.medium h1,
+.medium h2,
+.medium h3,
+.medium h4,
+.medium h5,
+.medium h6 {
+  font-weight: 500;
+}
+/* Add specific styling to show / hide elems on mobile/desktop 
+   Useful for right stacked two col modules 
+*/
+.mobile {
+  display: none;
+}
+span.mobile {
+  display: none;
+  font-size: 0;
+  line-height: 0;
+}
+.unstyle-link,
+.unstyle-link a {
+  font-size: inherit;
+  line-height: inherit;
+  cursor: text;
+  pointer-events: none;
+  text-decoration: none;
+  color: #999 !important;
+}
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+.center {
+  text-align: center;
+}
+img.center,
+div.center,
+table.center {
+  margin: 0 auto;
+}
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.email-wrapper {
+  border: 1px solid black;
+}
+.placeholder-mod {
+  border: 1px solid orange;
+}
+.placeholder-mod .copy {
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 621px), only screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 360px !important;
+    max-width: 360px !important;
+  }
+  .desktop {
+    display: none !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+  img.mobile {
+    display: block !important;
+    height: auto !important;
+  }
+  span.mobile {
+    display: inline !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+  table.mobile {
+    display: table !important;
+  }
+  tr.mobile {
+    display: table-row !important;
+  }
+  td.mobile {
+    display: table-cell !important;
+  }
+  .email-wrapper {
+    border: 1px solid red !important;
+  }
+  .placeholder-mod .copy {
+    padding: 10px !important;
+    text-align: center !important;
+  }
+}
