@@ -1,0 +1,182 @@
+// Vars
+@desktop-width: 720px;
+@mobile-width: 360px;
+@email-wrapper-width: 720px;
+@document-color: #999;
+@document-font: 'Roboto', Arial, sans-serif;
+
+// Email Dimension Styles
+.email-wrapper {
+  width: @email-wrapper-width;
+  margin: 25px auto; 
+}
+
+.desktop-width {
+  padding: 0px;
+  margin: 0 auto;
+  width: @desktop-width;
+}
+.mobile-width {
+  width: @mobile-width;
+  max-width: @mobile-width;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+// Resets / General Styles
+body {
+  font-family: @document-font;
+  font-size: 0;
+  color: @document-color;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+a {
+  color: #1967D2; 
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  border: none;
+  outline: none;
+}
+
+p, h1, h2, h3, h4, h5, h6  {
+  margin: 0;
+  font-weight: 400;
+}
+
+strong, .bold {
+  p, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+.medium {
+  p, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+}
+
+/* Add specific styling to show / hide elems on mobile/desktop 
+   Useful for right stacked two col modules 
+*/
+.mobile {
+  display: none;
+}
+span.mobile {
+  display: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+// Helpers
+.unstyle-link, .unstyle-link a {
+  font-size: inherit;
+  line-height: inherit;
+  cursor: text;
+  pointer-events: none;
+  text-decoration: none;
+  color: @document-color !important; 
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.center {
+  text-align: center;
+}
+
+img.center, div.center, table.center {
+ margin: 0 auto;
+}
+
+// Copy Styles
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+// ==================== Message Styles ====================
+
+
+// ===== DESKTOP - Placeholder Module -- For tests only, remove when building =====
+.email-wrapper { // Show message dimensions for testing 
+  border: 1px solid black;
+}
+
+.placeholder-mod { // Test module
+  border: 1px solid gray;
+  .copy {
+    padding: 10px 20px;
+  }
+}
+// ===== DESKTOP- END Placeholder Module =====
+
+// Mobile Styles - targets all phone types + Samsung devices
+@media only screen and (max-width: 621px), 
+only screen and (min-width: 360px) and (max-width: 767px) {
+
+  .container {
+    width: @mobile-width !important;
+    max-width: @mobile-width !important;
+  }
+  
+  // Hide all desktop specific elements
+  .desktop {
+    display: none !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+  img.mobile {
+    display: block !important;
+    height: auto !important;
+  }
+  span.mobile {
+    display: inline !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+  table.mobile {
+    display: table !important;
+  }
+  tr.mobile {
+    display: table-row !important;
+  }
+  td.mobile {
+    display: table-cell !important;
+  }
+  
+
+  // ===== MOBILE - Placeholder Module -- For tests only, remove when building =====
+  .email-wrapper { // Show message dimensions for testing 
+    border: 1px solid goldenrod !important;
+  }
+
+  .placeholder-mod { // Test module 
+    .copy {
+      padding: 10px !important;
+      text-align: center !important;
+    }
+  }
+  // ===== MOBILE- END Placeholder Module =====
+} 
